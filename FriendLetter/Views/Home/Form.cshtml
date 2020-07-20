@@ -6,13 +6,27 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-    <h1>Fill in your name and your friend's name to create your custom postcard!</h1>
-    <form action="/postcard" method="post">
-    <label for="sender">Sender's Name</label>
-    <input id="sender" name="sender" type="text">
-    <label for="recipient">Recipient's Name</label>
-    <input id="recipient" name="recipient" type="text">
-    <button type="submit">Go!</button>
-    </form>
+    <div class="container">
+      <h1>Fill in your name and your friend's name to create your custom postcard!</h1>
+      <form action="/postcard" method="post">
+      <div class="form-group">
+        <label for="sender">Sender's Name</label>
+        <input id="sender" name="sender" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="recipient">Recipient's Name</label>
+        <input id="recipient" name="recipient" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="location">Location's Name</label>
+        <input id="location" name="location" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="souvenir">Souvenir's Name</label>
+        <input id="souvenir" name="souvenir" type="text" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-info" onclick=location.href("/postcard")>Go!</button>
+      </form>
+    </div>
   </body>
 </html>
